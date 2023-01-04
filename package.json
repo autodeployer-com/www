@@ -1,4 +1,17 @@
 {
+  "name": "www-autodeployer-com",
+  "version": "1.0.0",
+  "description": "Documentation for DIALOGWARE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autodeployer-com/www.git"
+  },
+  "author": "Tom Sapletta",
+  "license": "Apache License 2.0",
+  "homepage": "https://github.com/autodeployer-com/www/tree/main/#readme",
+  "bugs": {
+    "url": "https://www.autodeployer.com"
+  },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -12,4 +25,5 @@
     "vitepress": "^1.0.0-alpha.35",
     "vue": "^3.2.45"
   }
+
 }

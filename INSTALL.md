@@ -45,7 +45,7 @@ yarn docs:dev
 ```
 
 ```bash
-
+yarn dev
 ```
 
 
