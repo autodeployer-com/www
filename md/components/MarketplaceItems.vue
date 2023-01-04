@@ -1,4 +1,3 @@
-napisz kompenent dla frameworku vue z sekcją style i script do wyświetlenia danych z pliku JSON zawierające tablicę z kolumnami: id, nazwa, opis, url
 
 <template>
   <div>

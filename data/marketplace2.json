@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "url": "#sentence1",
+    "category": "regex",
+    "name": "Save regex",
+    "description": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
+  },
+  {
+    "id": 2,
+    "url": "#sentence2",
+    "category": "api",
+    "name": "Save api",
+    "description": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
+  }
+]

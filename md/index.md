@@ -24,14 +24,18 @@ Please find more details about DIALOGWARE Review on our video presentation
 
 <script setup>
 
-import SentenceFromJson from '/components/SentenceFromJson.vue';
+import Marketplace from '/components/Marketplace.vue';
+import MarketplaceSearch from '/components/MarketplaceSearch.vue';
 
 </script>
 
 
-## SentenceFromJson
+## Marketplace
 
-<SentenceFromJson />
+<MarketplaceSearch />
+        
+
+        <Marketplace />
 
 
 

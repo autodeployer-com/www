@@ -1,9 +1,8 @@
-<!-- SentenceFromJson.vue -->
+<!-- Marketplace.vue -->
 <script setup>
 
 import items from "/data/marketplace.json";
 import {ref} from "vue";
-//import items from '/data/marketplace.json' assert {type: 'json'}
 
 const sentences = items
 console.log(sentences);
@@ -48,6 +47,36 @@ const search_form = ref(true)
 
       <div class="edit">
         <textarea>{{ sentence.text }}</textarea>
+      </div>
+
+
+      <p class="label">Processing:</p>
+      <div class="processed">
+        <p class="get_input">
+          <span class="title">INPUT: </span>
+          <span class="part">{{ sentence.input }}</span>
+        </p>
+        <p class="get_process">
+          <span class="title">PROCESS: </span>
+          <span class="part">{{ sentence.process }}</span>
+        </p>
+        <p class="get_output">
+          <span class="title">OUTPUT: </span>
+          <span class="part">{{ sentence.output }}</span>
+        </p>
+      </div>
+
+      <p class="label">Translation:</p>
+      <span class="description">Sentence is translated from TEXT to DSL:</span>
+      <p class="dsl">
+        <span class="part">{{ sentence.dsl }}</span>
+      </p>
+
+      <p class="label">Deployment:</p>
+      <span class="description">Start the script local and remote over shell:</span>
+
+      <div class="installation">
+        <textarea>{{ sentence.installation }}</textarea>
       </div>
 
     </div>
@@ -201,7 +230,6 @@ div.sentence {
   padding: 1px;
   border: 1px solid white;
 }
-
 
 
 .search_box {
