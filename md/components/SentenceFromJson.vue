@@ -25,9 +25,9 @@ export default {
         <p class="biglabel">Sentence no. {{ sentence.id }}</p>
       </a>
       <p class="label">Editing:</p>
-      <dev class="edit">
+      <div class="edit">
         <textarea>{{ sentence.text }}</textarea>
-      </dev>
+      </div>
 
       <p class="label">Processing:</p>
       <div class="processed">

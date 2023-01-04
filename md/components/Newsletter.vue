@@ -125,7 +125,7 @@ function newsletter() {
 .email_form input,
 .tip,
 .warning {
-  width: 300px;
+  width: 250px;
 
   font-size: 25px;
 }

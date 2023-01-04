@@ -31,9 +31,6 @@ export default defineConfig({
             //{text: 'Start', link: '/app/start'},
             {text: 'Early Access', link: '/app/access'},
             {text: 'Desktop Application', link: '/app/desktop'},
-            //{text: 'Examples', link: '/app/sentences'},
-            //{text: 'Pricing (2023)', link: '/offer/pricing'},
-            {text: 'Review', link: '/about/review'},
             {text: 'Status', link: '/about/status'},
             //{text: 'Our Story', link: '/about/story'},
             //{text: 'Team & Partners', link: '/about/team'},
@@ -57,7 +54,7 @@ export default defineConfig({
             lineNumbers: true
         },
         editLink: {
-            pattern: 'https://github.com/autodeployer/www/edit/main/md/:path',
+            pattern: 'https://github.com/autodeployer/www/md/:path',
             text: 'Edit this page on GitHub'
         },
         footer: {
