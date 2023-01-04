@@ -1,65 +1,60 @@
 <!-- SentenceFromJson.vue -->
-<script>
+<script setup>
 
-//import items from "/data/marketplace.json";
-import items from '/data/marketplace.json' assert {type: 'json'};
+import items from "/data/marketplace.json";
+import {ref} from "vue";
+//import items from '/data/marketplace.json' assert {type: 'json'}
 
 const sentences = items
 console.log(sentences);
 
-export default {
-  props: ['url', 'text', 'dsl', 'installation'],
-  data() {
-    return {
-      sentences: items
-    };
-  }
-}
+const search_form = ref(true)
+
+//search_form.value = false
+
 </script>
 
 <template>
+
+  <div class="search_box">
+
+    <form method="get" class="search_form" id="search_form" v-if="search_form" action="#" onsubmit="return false;">
+
+      <div>
+        <fieldset>
+          <input v-model="search_label" placeholder=""/>
+        </fieldset>
+      </div>
+
+
+      <div v-if="search_form">
+        <fieldset class="button_send">
+          <button @click="search">Search</button>
+        </fieldset>
+      </div>
+
+    </form>
+
+  </div>
+
   <div class="sentence" v-for="sentence in sentences">
+
     <div id="sentence{{sentence.id}}">
 
       <a class="url" :href="sentence.url">
         <p class="biglabel">Sentence no. {{ sentence.id }}</p>
       </a>
       <p class="label">Editing:</p>
+
       <div class="edit">
         <textarea>{{ sentence.text }}</textarea>
       </div>
 
-      <p class="label">Processing:</p>
-      <div class="processed">
-        <p class="get_input">
-          <span class="title">INPUT: </span>
-          <span class="part">{{ sentence.input }}</span>
-        </p>
-        <p class="get_process">
-          <span class="title">PROCESS: </span>
-          <span class="part">{{ sentence.process }}</span>
-        </p>
-        <p class="get_output">
-          <span class="title">OUTPUT: </span>
-          <span class="part">{{ sentence.output }}</span>
-        </p>
-      </div>
-
-      <p class="label">Translation:</p>
-      <span class="description">Sentence is translated from TEXT to DSL:</span>
-      <p class="dsl">
-        <span class="part">{{ sentence.dsl }}</span>
-      </p>
-
-      <p class="label">Deployment:</p>
-      <span class="description">Start the script local and remote over shell:</span>
-
-      <div class="installation">
-        <textarea>{{ sentence.installation }}</textarea>
-      </div>
-
     </div>
+
   </div>
+
+
 </template>
 
 
@@ -205,5 +200,67 @@ div.sentence {
   background-color: black;
   padding: 1px;
   border: 1px solid white;
+}
+
+
+
+.search_box {
+  display: flex;
+  justify-content: left;
+
+}
+
+.search_form {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.search_form input {
+  padding: 4px;
+  margin: 4px;
+}
+
+
+.search_form input,
+.tip,
+.warning {
+  height: 40px;
+}
+
+.search_form input,
+.tip,
+.warning {
+  width: 250px;
+
+  font-size: 25px;
+}
+
+fieldset {
+  border: 0px solid white;
+}
+
+button {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(66, 184, 131);
+  background-color: black;
+  padding: 4px;
+  height: 40px;
+  border: 1px solid yellowgreen;
+}
+
+
+input, textarea {
+  color: white;
+  background-color: black;
+  padding: 1px;
+  border: 1px solid white;
+}
+
+label div {
+  white-space: pre-line;
+  color: gray;
+  padding: 0px;
 }
 </style>

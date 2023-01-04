@@ -10,7 +10,19 @@ tags:
 # {{ $frontmatter.title }}
 
 <script setup>
-import Contact from '/components/Contact.vue'
+
+import Contact from '/components/Contact.vue';
+import Newsletter from '/components/Newsletter.vue';
+
 </script>
 
 <Contact />
+
+
+
+
+## NEWSLETTER
+
+Leave your email to be the first DIALOGWARE-ian :)
+
+<Newsletter />

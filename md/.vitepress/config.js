@@ -51,7 +51,7 @@ export default defineConfig({
             lineNumbers: true
         },
         editLink: {
-            pattern: 'https://github.com/autodeployer-com/www/md/:path',
+            pattern: 'https://github.com/autodeployer-com/www/edit/main/md/:path',
             text: 'Edit this page on GitHub'
         },
         footer: {
