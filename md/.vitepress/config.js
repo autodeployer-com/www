@@ -5,7 +5,7 @@ export default defineConfig({
     description: 'AutoDeployer.com - text to X marketplace',
     themeConfig: {
         // Assumes GitHub. Can also be a full GitLab url.
-        repo: 'autodeployer/www',
+        repo: 'autodeployer-com/www',
         // Customising the header label
         // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
         repoLabel: 'Contribute!',
@@ -32,9 +32,6 @@ export default defineConfig({
             {text: 'Early Access', link: '/app/access'},
             {text: 'Desktop Application', link: '/app/desktop'},
             {text: 'Status', link: '/about/status'},
-            //{text: 'Our Story', link: '/about/story'},
-            //{text: 'Team & Partners', link: '/about/team'},
-            //{text: 'Contact', link: 'https://www.linkedin.com/in/tom-sapletta-com/'},
             //{text: 'Start', link: '/user/registration'},
             {text: 'Contact', link: '/user/contact'},
             {
@@ -54,14 +51,14 @@ export default defineConfig({
             lineNumbers: true
         },
         editLink: {
-            pattern: 'https://github.com/autodeployer/www/md/:path',
+            pattern: 'https://github.com/autodeployer-com/www/md/:path',
             text: 'Edit this page on GitHub'
         },
         footer: {
             copyright: '© 2023  <a href="https://softreck.com" >Softreck</a>. All rights reserved.'
         },
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/autodeployer/www' },
+            { icon: 'github', link: 'https://github.com/autodeployer-com/www' },
             { icon: 'linkedin', link: 'https://www.linkedin.com/showcase/autodeployer/' },
         ]
     }
