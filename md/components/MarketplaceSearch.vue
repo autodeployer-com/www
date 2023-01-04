@@ -18,37 +18,34 @@
     <table>
       <thead>
       <tr>
-        <th>ID</th>
-        <th>Nazwa</th>
-        <th>Kategoria</th>
-        <th>Opis</th>
-        <th>URL</th>
+        <th>Nazwa - Kategoria - Opis</th>
       </tr>
       </thead>
       <tbody>
       <tr v-for="item in items" :key="item.id">
-        <td>{{ item.id }}</td>
-        <td>{{ item.name }}</td>
-        <td>{{ item.category }}</td>
-        <td>{{ item.description }}</td>
-        <td>{{ item.url }}</td>
+        <td>
+          <h3>
+            <a href="{{ item.url }}">{{ item.name }}</a> #{{ item.category }}
+          </h3>
+          {{ item.description }}
+        </td>
       </tr>
       </tbody>
     </table>
 
   </div>
 
-  <button @click="say('bye')">Say bye</button>
+<!--  <button @click="say('bye')">Say bye</button>-->
 
   <!-- using $event special variable -->
-  <button @click="warn('Form cannot be submitted yet.', $event)">
-    Submit
-  </button>
+<!--  <button @click="warn('Form cannot be submitted yet.', $event)">-->
+<!--    Submit-->
+<!--  </button>-->
 
   <!-- using inline arrow function -->
-  <button @click="(event) => warn('Form cannot be submitted yet.', event)">
-    Submit
-  </button>
+<!--  <button @click="(event) => warn('Form cannot be submitted yet.', event)">-->
+<!--    Submit-->
+<!--  </button>-->
 </template>
 
 <script>

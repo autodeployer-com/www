@@ -24,7 +24,7 @@ Please find more details about DIALOGWARE Review on our video presentation
 
 <script setup>
 
-import Marketplace from '/components/Marketplace.vue';
+//import Marketplace from '/components/Marketplace.vue';
 import MarketplaceSearch from '/components/MarketplaceSearch.vue';
 
 </script>
@@ -34,8 +34,3 @@ import MarketplaceSearch from '/components/MarketplaceSearch.vue';
 
 <MarketplaceSearch />
         
-
-        <Marketplace />
-
-
-
