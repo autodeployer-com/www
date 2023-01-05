@@ -29,8 +29,11 @@
           <h3>
               <span class="item_input"> <a href="{{ item.url }}">{{ item.input }}</a></span>
               <span class="item_category"> #{{ item.category }}</span>
-            <button @click="deployLocal">run</button>
-            <button @click="deployRemote">run on cloud</button>
+            ->
+            <span class="item_button"> RUN on:</span>
+            <button @click="runOnBrowser">BROWSER</button>
+            <button @click="deployRemote">CLOUD</button>
+            <button @click="deployLocal">PC</button>
           </h3>
           {{ item.output }}
         </td>
@@ -124,7 +127,7 @@ export default {
     deployLocal(message) {
       alert(message)
     },
-    say(message) {
+    runOnBrowser(message) {
       alert(message)
     },
     warn(message, event) {
@@ -164,6 +167,9 @@ table, th, td {
 }
 .item_category {
 
+}
+.item_button {
+  color: gray;
 }
 
 input, textarea {
