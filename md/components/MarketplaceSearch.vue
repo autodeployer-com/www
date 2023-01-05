@@ -25,9 +25,9 @@
       <!--      </thead>-->
       <tbody>
       <tr v-for="item in items" :key="item.id">
-        <td>
+        <td :id="item.id">
           <h3>
-            <span class="item_input"> <a :href="`${item.url}`">{{ item.input }}</a></span>
+            <span class="item_input"> <a :href="'#'+ item.id">{{ item.input }}</a></span>
             <span class="item_category"> #{{ item.category }}</span>
 
             ->
