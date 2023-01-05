@@ -34,7 +34,7 @@
             <!--            <span class="item_button"> RUN on: </span>-->
 <!--            v-model="deployment"-->
             <select name="deployment" id="deployment" required>
-              <option disabled selected value>RUN on:</option>
+              <option disabled selected value>RUN on: ... </option>
               <option @click="runOnBrowser" value="1">BROWSER</option>
               <option @click="deployRemote" value="2">CLOUD</option>
               <option @click="deployLocal" value="3">LOCAL PC</option>
@@ -227,6 +227,14 @@ button {
 
 button:hover {
   background-color: #8e8e8e;
-
 }
+
+select {
+  font-weight: bolder;
+  padding: 0px 5px;
+}
+select:hover {
+  background-color: #8e8e8e;
+}
+
 </style>
