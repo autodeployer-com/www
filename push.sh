@@ -7,7 +7,7 @@
 #cp -fv README.md md/index.md
 yarn build || exit
 cp -f -r ./md/.vitepress/dist/* .
-cp -f -r ./md/img/* ./img
+#cp -f -r ./md/img/* ./img
 cp -f -r ./md/data/* ./data
 #rm README.md
 

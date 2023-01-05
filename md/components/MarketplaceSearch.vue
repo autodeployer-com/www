@@ -8,7 +8,6 @@
 
     <!--    <button @click="fetchItems">reset</button> - -->
     <!--    <button @click="searchName">searchName</button> - -->
-    <!--    <button @click="searchCategory">searchCategory</button>-->
 
     <div class="category">
     <input type="radio" id="yes" name="category" value="api" @click="setCategory('api')">
@@ -30,6 +29,8 @@
           <h3>
               <span class="item_input"> <a href="{{ item.url }}">{{ item.input }}</a></span>
               <span class="item_category"> #{{ item.category }}</span>
+            <button @click="deployLocal">run</button>
+            <button @click="deployRemote">run on cloud</button>
           </h3>
           {{ item.output }}
         </td>
@@ -117,6 +118,12 @@ export default {
             console.log("search output: " + content)
           })
     },
+    deployRemote(message) {
+      alert(message)
+    },
+    deployLocal(message) {
+      alert(message)
+    },
     say(message) {
       alert(message)
     },
@@ -183,5 +190,18 @@ input[type=radio] {
 .category label {
   margin: 2px;
   padding: 1px 4px 1px 4px;
+}
+
+button {
+  color: white;
+  font-weight: bolder;
+  background-color: darkgray;
+  padding: 0px 4px;
+  margin: 0px 6px;
+  border: 1px solid gray;
+}
+button:hover {
+  background-color: #8e8e8e;
+
 }
 </style>
