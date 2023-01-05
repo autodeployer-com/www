@@ -1,7 +1,7 @@
 <template>
   <div>
 
-<!--    <input type="text" v-model="search_value" @keyup="searchContent"/>-->
+    <!--    <input type="text" v-model="search_value" @keyup="searchContent"/>-->
     <input type="text" v-model="search_value" @keyup="searchByInput"/>
 
     <!--    <input type="text" v-model="search_value" @change="searchName" />-->
@@ -10,30 +10,40 @@
     <!--    <button @click="searchName">searchName</button> - -->
 
     <div class="category">
-    <input type="radio" id="yes" name="category" value="api" @click="setCategory('api')">
-    <label for="yes">#api</label>
+      <input type="radio" id="yes" name="category" value="api" @click="setCategory('api')">
+      <label for="yes">#api</label>
 
-    <input type="radio" id="no"  name="category" value="regex" @click="setCategory('regex')">
-    <label for="no">#regex</label>
+      <input type="radio" id="no" name="category" value="regex" @click="setCategory('regex')">
+      <label for="no">#regex</label>
     </div>
 
     <table>
-<!--      <thead>-->
-<!--      <tr>-->
-<!--        <th>Nazwa - Kategoria - Opis</th>-->
-<!--      </tr>-->
-<!--      </thead>-->
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th>Nazwa - Kategoria - Opis</th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
       <tbody>
       <tr v-for="item in items" :key="item.id">
         <td>
           <h3>
-              <span class="item_input"> <a href="{{ item.url }}">{{ item.input }}</a></span>
-              <span class="item_category"> #{{ item.category }}</span>
+            <span class="item_input"> <a href="{{ item.url }}">{{ item.input }}</a></span>
+            <span class="item_category"> #{{ item.category }}</span>
+
             ->
-            <span class="item_button"> RUN on:</span>
-            <button @click="runOnBrowser">BROWSER</button>
-            <button @click="deployRemote">CLOUD</button>
-            <button @click="deployLocal">PC</button>
+            <!--            <span class="item_button"> RUN on: </span>-->
+<!--            v-model="deployment"-->
+            <select name="deployment" id="deployment" required>
+              <option disabled selected value>RUN on:</option>
+              <option @click="runOnBrowser" value="1">BROWSER</option>
+              <option @click="deployRemote" value="2">CLOUD</option>
+              <option @click="deployLocal" value="3">LOCAL PC</option>
+            </select>
+            <!--            <button @click="runOnBrowser">BROWSER</button>-->
+            <!--            <button @click="deployRemote">CLOUD</button>-->
+            <!--            <button @click="deployLocal">PC</button>-->
+<!--            <button @click="deployLocal">-></button>-->
+
           </h3>
           {{ item.output }}
         </td>
@@ -43,21 +53,24 @@
 
   </div>
 
-<!--  <button @click="say('bye')">Say bye</button>-->
+  <!--  <button @click="say('bye')">Say bye</button>-->
 
   <!-- using $event special variable -->
-<!--  <button @click="warn('Form cannot be submitted yet.', $event)">-->
-<!--    Submit-->
-<!--  </button>-->
+  <!--  <button @click="warn('Form cannot be submitted yet.', $event)">-->
+  <!--    Submit-->
+  <!--  </button>-->
 
   <!-- using inline arrow function -->
-<!--  <button @click="(event) => warn('Form cannot be submitted yet.', event)">-->
-<!--    Submit-->
-<!--  </button>-->
+  <!--  <button @click="(event) => warn('Form cannot be submitted yet.', event)">-->
+  <!--    Submit-->
+  <!--  </button>-->
 </template>
 
 <script>
-const MarketplaceFile='/data/marketplace.json';
+
+// document.getElementById("deployment").selectedIndex = -1;
+
+const MarketplaceFile = '/data/marketplace.json';
 export default {
   data() {
     return {
@@ -155,19 +168,24 @@ table, th, td {
   border: 0px solid #ddd;
   text-align: left;
 }
+
 .vp-doc th, .vp-doc td {
   border: 1px solid var(--vp-c-divider);
   padding: 5px 5px;
 }
+
 .vp-doc h3 {
   margin: 5px 0 0;
 }
+
 .item_input a {
   color: green;
 }
+
 .item_category {
 
 }
+
 .item_button {
   color: gray;
 }
@@ -177,7 +195,7 @@ input, textarea {
   /*background-color: black;*/
   padding: 1px 4px 1px 4px;
   border: 1px solid darkgreen;
-  width:100%;
+  width: 100%;
   font-size: larger;
 }
 
@@ -206,6 +224,7 @@ button {
   margin: 0px 6px;
   border: 1px solid gray;
 }
+
 button:hover {
   background-color: #8e8e8e;
 

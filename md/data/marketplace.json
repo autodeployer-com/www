@@ -19,5 +19,12 @@
     "category": "html",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
+  },
+  {
+    "id": 4,
+    "url": "#sentence3",
+    "category": "bash",
+    "input": "Convert all pages of PDF Document to text in txt format",
+    "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   }
 ]
