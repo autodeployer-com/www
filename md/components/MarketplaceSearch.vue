@@ -9,23 +9,26 @@
     <!--    <button @click="searchName">searchName</button> - -->
     <!--    <button @click="searchCategory">searchCategory</button>-->
 
+    <div class="category">
     <input type="radio" id="yes" name="category" value="api" @click="setCategory('api')">
-    <label for="yes">api</label>
+    <label for="yes">#api</label>
 
     <input type="radio" id="no"  name="category" value="regex" @click="setCategory('regex')">
-    <label for="no">regex</label>
+    <label for="no">#regex</label>
+    </div>
 
     <table>
-      <thead>
-      <tr>
-        <th>Nazwa - Kategoria - Opis</th>
-      </tr>
-      </thead>
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>Nazwa - Kategoria - Opis</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
       <tbody>
       <tr v-for="item in items" :key="item.id">
         <td>
           <h3>
-            <a href="{{ item.url }}">{{ item.name }}</a> #{{ item.category }}
+              <span class="item_name"> <a href="{{ item.url }}">{{ item.name }}</a></span>
+              <span class="item_category"> #{{ item.category }}</span>
           </h3>
           {{ item.description }}
         </td>
@@ -111,6 +114,7 @@ export default {
 
 
 <style scoped>
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -120,17 +124,42 @@ table, th, td {
   border: 0px solid #ddd;
   text-align: left;
 }
+.vp-doc th, .vp-doc td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 5px 5px;
+}
+.vp-doc h3 {
+  margin: 5px 0 0;
+}
+.item_name a {
+  color: #42f842;
+}
+.item_category {
+
+}
 
 input, textarea {
-  /*color: white;*/
+  color: #42f842;
   /*background-color: black;*/
   padding: 1px 4px 1px 4px;
-  border: 1px solid white;
+  border: 1px solid darkgreen;
+  width:100%;
 }
 
 label div {
   white-space: pre-line;
-  color: gray;
+  /*color: gray;*/
   padding: 0px;
+}
+
+input[type=radio] {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.category label {
+  margin: 2px;
+  padding: 1px 4px 1px 4px;
 }
 </style>

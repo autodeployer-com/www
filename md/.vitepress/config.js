@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress'
 
 export default defineConfig({
+    lang: 'en-US',
     title: 'AutoDeployer.com',
     description: 'AutoDeployer.com - text to X marketplace',
     themeConfig: {
@@ -24,8 +25,8 @@ export default defineConfig({
         lang: 'en-US',
         title: 'DIALOGWARE',
         description: 'Text to Software solution to build a web application in minutes',
-        logo: 'https://img.autodeployer.com/autodeployer-2lines.png',
-        siteTitle: 'AUTODEPLOYER', // When adding a logo, it gets displayed along with the site title. If your logo is all you need and if you would like to hide the site title text, set false to the siteTitle option.
+        logo: 'https://www.autodeployer.com/favicon.ico',
+        siteTitle: 'AutoDeployer.com', // When adding a logo, it gets displayed along with the site title. If your logo is all you need and if you would like to hide the site title text, set false to the siteTitle option.
         nav: [
             //{text: 'Home', link: '/'},
             //{text: 'Start', link: '/app/start'},
