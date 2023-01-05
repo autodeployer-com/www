@@ -35,16 +35,16 @@ export default defineConfig({
             // {text: 'Status', link: '/about/status'},
             //{text: 'Start', link: '/user/registration'},
             {text: 'Contact', link: '/user/contact'},
-            {
-                text: 'Documentation',
-                items: [
+            // {
+            //     text: 'Documentation',
+            //     items: [
                     //{text: 'Video', link: '/about/video'},
-                    {text: 'text2software.com', link: 'https://www.text2software.com/'},
-                    {text: 'docs.autodeployer.com', link: 'https://docs.autodeployer.com/'},
-                    {text: 'Roadmap on github', link: 'https://github.com/orgs/autodeployer/projects/2/views/1'},
-                    {text: 'Tasks on github', link: 'https://github.com/orgs/autodeployer/projects/1/views/1'}
-                ]
-            },
+                    // {text: 'text2software.com', link: 'https://www.text2software.com/'},
+                    // {text: 'docs.autodeployer.com', link: 'https://docs.autodeployer.com/'},
+                    // {text: 'Roadmap on github', link: 'https://github.com/orgs/autodeployer/projects/2/views/1'},
+                    // {text: 'Tasks on github', link: 'https://github.com/orgs/autodeployer/projects/1/views/1'}
+                // ]
+            // },
 
         ],
         markdown: {
