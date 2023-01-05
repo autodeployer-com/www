@@ -2,31 +2,22 @@
   {
     "id": 1,
     "url": "#sentence1",
-    "text": "Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png].",
-    "input": "Load [file]",
-    "process": "Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device",
-    "output": "Save each [screenshot] to [file] in format [png]",
-    "dsl": "letfile.load().getfile.getLine().puppeter.toPng()",
-    "installation": "#!/bin/bash \n#INSTALL APIDSL\ncurl https://raw.githubusercontent.com/apidsl/bash/main/apidsl.sh -o apidsl\n./apidsl init\n# CREATE FOLDER\nmkdir 1667145230\ncd 1667145230\n# IMPORT LIBRARIES\napidsl --get https://github.com/letfile/file\t\napidsl --get https://github.com/leteach/file\napidsl --get https://github.com/puppeter/file\n# RUN APIDSL\napidsl 'letfile.load().getfile.getLine().puppeter.toPng()'"
+    "category": "regex",
+    "input": "Match valid email",
+    "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
     "id": 2,
     "url": "#sentence2",
-    "text": "Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png].",
-    "input": "Load [file]",
-    "process": "Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device",
-    "output": "Save each [screenshot] to [file] in format [png]",
-    "dsl": "letfile.load().getfile.getLine().puppeter.toPng()",
-    "installation": "#!/bin/bash \n#INSTALL APIDSL\ncurl https://raw.githubusercontent.com/apidsl/bash/main/apidsl.sh -o apidsl\n./apidsl init\n# CREATE FOLDER\nmkdir 1667145230\ncd 1667145230\n# IMPORT LIBRARIES\napidsl --get https://github.com/letfile/file\t\napidsl --get https://github.com/leteach/file\napidsl --get https://github.com/puppeter/file\n# RUN APIDSL\napidsl 'letfile.load().getfile.getLine().puppeter.toPng()'"
+    "category": "api",
+    "input": "Save api",
+    "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
     "id": 3,
     "url": "#sentence3",
-    "text": "Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png].",
-    "input": "Load [file]",
-    "process": "Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device",
-    "output": "Save each [screenshot] to [file] in format [png]",
-    "dsl": "letfile.load().getfile.getLine().puppeter.toPng()",
-    "installation": "#!/bin/bash \n#INSTALL APIDSL\ncurl https://raw.githubusercontent.com/apidsl/bash/main/apidsl.sh -o apidsl\n./apidsl init\n# CREATE FOLDER\nmkdir 1667145230\ncd 1667145230\n# IMPORT LIBRARIES\napidsl --get https://github.com/letfile/file\t\napidsl --get https://github.com/leteach/file\napidsl --get https://github.com/puppeter/file\n# RUN APIDSL\napidsl 'letfile.load().getfile.getLine().puppeter.toPng()'"
+    "category": "html",
+    "input": "Save api",
+    "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   }
 ]

@@ -1,7 +1,8 @@
 <template>
   <div>
 
-    <input type="text" v-model="search_value" @keyup="searchName"/>
+<!--    <input type="text" v-model="search_value" @keyup="searchContent"/>-->
+    <input type="text" v-model="search_value" @keyup="searchByInput"/>
 
     <!--    <input type="text" v-model="search_value" @change="searchName" />-->
 
@@ -27,10 +28,10 @@
       <tr v-for="item in items" :key="item.id">
         <td>
           <h3>
-              <span class="item_name"> <a href="{{ item.url }}">{{ item.name }}</a></span>
+              <span class="item_input"> <a href="{{ item.url }}">{{ item.input }}</a></span>
               <span class="item_category"> #{{ item.category }}</span>
           </h3>
-          {{ item.description }}
+          {{ item.output }}
         </td>
       </tr>
       </tbody>
@@ -52,6 +53,7 @@
 </template>
 
 <script>
+const MarketplaceFile='/data/marketplace.json';
 export default {
   data() {
     return {
@@ -64,36 +66,55 @@ export default {
   },
   methods: {
     fetchItems() {
-      fetch('/data/marketplace2.json')
+      fetch(MarketplaceFile)
           .then(res => res.json())
           .then((data) => {
             this.items = data
           })
     },
-    searchName() {
+    searchByInput() {
       if (this.search_value.length < 1) {
         this.fetchItems();
       }
-      const filtered = this.items.filter(item => item.name.includes(this.search_value))
+      const filtered = this.items.filter(item => item.input.toLowerCase().includes(this.search_value.toLowerCase()))
       this.items = filtered
-      console.log("search name: " + this.search_value)
+      console.log("search input: " + this.search_value)
     },
     searchCategory() {
       if (this.search_value.length < 1) {
         this.fetchItems();
       }
-      const filtered = this.items.filter(item => item.category.includes(this.search_value))
+      const filtered = this.items.filter(item => item.category.toLowerCase().includes(this.search_value.toLowerCase()))
       this.items = filtered
       console.log("search category: " + this.search_value)
     },
     setCategory(category) {
-      fetch('/data/marketplace2.json')
+      category = category.toLowerCase();
+      fetch(MarketplaceFile)
           .then(res => res.json())
           .then((data) => {
             this.items = data
-            const filtered = this.items.filter(item => item.category.includes(category))
+            const filtered = this.items.filter(item => item.category.toLowerCase().includes(category))
             this.items = filtered
             console.log("set category: " + category)
+          })
+    },
+    searchByOutput() {
+      //TODO: save all questions and show all not existing to develop system
+      // http://query.autodeployer.com/ - as a Service with request deployed as nodejs/python + docker
+      // CRUD http://marketplace.autodeployer.com/add
+      // CRUD http://marketplace.autodeployer.com/remove
+      // CRUD http://marketplace.autodeployer.com/read
+      // CRUD http://marketplace.autodeployer.com/list
+      //
+      let content = this.search_value.toLowerCase();
+      fetch(MarketplaceFile)
+          .then(res => res.json())
+          .then((data) => {
+            this.items = data
+            const filtered = this.items.filter(item => item.output.toLowerCase().includes(content))
+            this.items = filtered
+            console.log("search output: " + content)
           })
     },
     say(message) {
@@ -131,7 +152,7 @@ table, th, td {
 .vp-doc h3 {
   margin: 5px 0 0;
 }
-.item_name a {
+.item_input a {
   color: green;
 }
 .item_category {
