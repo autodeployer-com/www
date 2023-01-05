@@ -30,9 +30,9 @@ export default defineConfig({
         nav: [
             //{text: 'Home', link: '/'},
             //{text: 'Start', link: '/app/start'},
-            {text: 'Early Access', link: '/app/access'},
-            {text: 'Desktop Application', link: '/app/desktop'},
-            {text: 'Status', link: '/about/status'},
+            // {text: 'Early Access', link: '/app/access'},
+            // {text: 'Desktop Application', link: '/app/desktop'},
+            // {text: 'Status', link: '/about/status'},
             //{text: 'Start', link: '/user/registration'},
             {text: 'Contact', link: '/user/contact'},
             {
