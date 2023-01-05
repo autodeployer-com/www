@@ -132,18 +132,19 @@ table, th, td {
   margin: 5px 0 0;
 }
 .item_name a {
-  color: #42f842;
+  color: green;
 }
 .item_category {
 
 }
 
 input, textarea {
-  color: #42f842;
+  color: green;
   /*background-color: black;*/
   padding: 1px 4px 1px 4px;
   border: 1px solid darkgreen;
   width:100%;
+  font-size: larger;
 }
 
 label div {
