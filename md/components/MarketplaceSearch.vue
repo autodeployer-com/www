@@ -226,16 +226,6 @@ label div {
   padding: 0px;
 }
 
-input[type=radio] {
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-}
-
-.category label {
-  margin: 2px;
-  padding: 1px 4px 1px 4px;
-}
 
 button {
   color: white;
@@ -258,5 +248,18 @@ select {
 select:hover {
   background-color: #8e8e8e;
 }
+.category span {
+  display: inline-block;
+}
 
+input[type=radio] {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.category label {
+  margin: 2px;
+  padding: 3px 4px 3px 4px;
+}
 </style>
