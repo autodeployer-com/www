@@ -84,142 +84,142 @@
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 1001,
+    "id": 6001,
     "url": "#sentence1",
-    "category": "regex",
+    "category": "code",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 1002,
+    "id": 6002,
     "url": "#sentence2",
-    "category": "api",
+    "category": "code",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 1003,
+    "id": 6003,
     "url": "#sentence3",
-    "category": "html",
+    "category": "code",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 1004,
+    "id": 6004,
     "url": "#sentence3",
-    "category": "bash",
+    "category": "code",
     "input": "Convert all pages of PDF Document to text in txt format",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2001,
+    "id": 7001,
     "url": "#sentence1",
-    "category": "regex",
+    "category": "javascript",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2002,
+    "id": 7002,
     "url": "#sentence2",
-    "category": "api",
+    "category": "javascript",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2003,
+    "id": 7003,
     "url": "#sentence3",
-    "category": "html",
+    "category": "javascript",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2004,
+    "id": 7004,
     "url": "#sentence3",
-    "category": "bash",
+    "category": "javascript",
     "input": "Convert all pages of PDF Document to text in txt format",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2001,
+    "id": 5001,
     "url": "#sentence1",
-    "category": "regex",
+    "category": "nodejs",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2002,
+    "id": 5002,
     "url": "#sentence2",
-    "category": "api",
+    "category": "nodejs",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2003,
+    "id": 5003,
     "url": "#sentence3",
-    "category": "html",
+    "category": "nodejs",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2004,
+    "id": 5004,
     "url": "#sentence3",
-    "category": "bash",
+    "category": "nodejs",
     "input": "Convert all pages of PDF Document to text in txt format",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2001,
+    "id": 8001,
     "url": "#sentence1",
-    "category": "regex",
+    "category": "python",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2002,
+    "id": 8002,
     "url": "#sentence2",
-    "category": "api",
+    "category": "python",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2003,
+    "id": 8003,
     "url": "#sentence3",
-    "category": "html",
+    "category": "python",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2004,
+    "id": 8004,
     "url": "#sentence3",
-    "category": "bash",
+    "category": "python",
     "input": "Convert all pages of PDF Document to text in txt format",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2001,
+    "id": 9001,
     "url": "#sentence1",
     "category": "regex",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2002,
+    "id": 9002,
     "url": "#sentence2",
-    "category": "api",
+    "category": "regex",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2003,
+    "id": 9003,
     "url": "#sentence3",
-    "category": "html",
+    "category": "regex",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
-    "id": 2004,
+    "id": 9004,
     "url": "#sentence3",
-    "category": "bash",
+    "category": "regex",
     "input": "Convert all pages of PDF Document to text in txt format",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   }
