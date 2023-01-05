@@ -10,10 +10,12 @@ lang: en-US
 
 <script setup>
 
-//import Marketplace from '/components/Marketplace.vue';
 import MarketplaceSearch from '/components/MarketplaceSearch.vue';
+import SelectList from '/components/SelectList.vue';
 
 </script>
+
+[//]: # (<SelectList />)
 
 <MarketplaceSearch />
 

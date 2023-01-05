@@ -9,6 +9,8 @@
 </template>
 
 <script>
+const CategoryFile = '/data/category.json';
+
 export default {
   data() {
     return {
@@ -17,7 +19,7 @@ export default {
     }
   },
   created() {
-    fetch('/data.json')
+    fetch(CategoryFile)
       .then(response => response.json())
       .then(data => this.options = data);
   },

@@ -8,13 +8,11 @@
 
     <!--    <button @click="fetchItems">reset</button> - -->
     <!--    <button @click="searchName">searchName</button> - -->
-
     <div class="category">
-      <input type="radio" id="yes" name="category" value="api" @click="setCategory('api')">
-      <label for="yes">#api</label>
-
-      <input type="radio" id="no" name="category" value="regex" @click="setCategory('regex')">
-      <label for="no">#regex</label>
+      <span class="category_item" v-for="category in categories" :key="category.id" >
+        <input type="radio" :id="category.value" name="category" :value="category.value" @click="selectCategory">
+        <label :for="category.value">#{{ category.label }}</label>
+      </span>
     </div>
 
     <table>
@@ -32,9 +30,9 @@
 
             ->
             <!--            <span class="item_button"> RUN on: </span>-->
-<!--            v-model="deployment"-->
+            <!--            v-model="deployment"-->
             <select name="deployment" id="deployment" required>
-              <option disabled selected value>RUN on: ... </option>
+              <option disabled selected value>RUN on: ...</option>
               <option @click="runOnBrowser" value="1">BROWSER</option>
               <option @click="deployRemote" value="2">CLOUD</option>
               <option @click="deployLocal" value="3">LOCAL PC</option>
@@ -42,7 +40,7 @@
             <!--            <button @click="runOnBrowser">BROWSER</button>-->
             <!--            <button @click="deployRemote">CLOUD</button>-->
             <!--            <button @click="deployLocal">PC</button>-->
-<!--            <button @click="deployLocal">-></button>-->
+            <!--            <button @click="deployLocal">-></button>-->
 
           </h3>
           {{ item.output }}
@@ -71,15 +69,19 @@
 // document.getElementById("deployment").selectedIndex = -1;
 
 const MarketplaceFile = '/data/marketplace.json';
+const CategoryFile = '/data/category.json';
 export default {
   data() {
     return {
       search_value: '',
+      category_value: '',
       items: [],
+      categories: [],
     }
   },
   created() {
     this.fetchItems()
+    this.fetchCategory()
   },
   methods: {
     fetchItems() {
@@ -87,6 +89,13 @@ export default {
           .then(res => res.json())
           .then((data) => {
             this.items = data
+          })
+    },
+    fetchCategory() {
+      fetch(CategoryFile)
+          .then(res => res.json())
+          .then((data) => {
+            this.categories = data
           })
     },
     searchByInput() {
@@ -114,6 +123,18 @@ export default {
             const filtered = this.items.filter(item => item.category.toLowerCase().includes(category))
             this.items = filtered
             console.log("set category: " + category)
+          })
+    },
+    selectCategory(e) {
+      // const category = this.category_value.toLowerCase();
+      const category = e.target.value;
+      fetch(MarketplaceFile)
+          .then(res => res.json())
+          .then((data) => {
+            this.items = data
+            const filtered = this.items.filter(item => item.category.toLowerCase().includes(category))
+            this.items = filtered
+            console.log("selectCategory2: " + category)
           })
     },
     searchByOutput() {
@@ -233,6 +254,7 @@ select {
   font-weight: bolder;
   padding: 0px 5px;
 }
+
 select:hover {
   background-color: #8e8e8e;
 }
