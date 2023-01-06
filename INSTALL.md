@@ -32,6 +32,8 @@ config:
 + API
 + APP + php
 + API + Vue App
++ docker (terminal in browser)
+
 
 
 
