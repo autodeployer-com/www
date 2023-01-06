@@ -29,3 +29,6 @@ import SelectList from '/components/SelectList.vue';
 <span> <a href="">text2vue</a>, </span> 
 <span> <a href="">text2html</a>, </span> 
 ...
+
+
+![autodeployer.png](img/autodeployer.png)

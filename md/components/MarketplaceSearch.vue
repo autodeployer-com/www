@@ -259,7 +259,7 @@ input[type=radio] {
 }
 
 .category label {
-  margin: 2px;
-  padding: 3px 4px 3px 4px;
+  margin: 5px;
+  padding: 5px;
 }
 </style>

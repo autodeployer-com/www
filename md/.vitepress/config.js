@@ -3,7 +3,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     lang: 'en-US',
     title: 'AutoDeployer.com',
-    description: 'AutoDeployer.com - text to X marketplace',
+    description: 'Text to Service',
     themeConfig: {
         // Assumes GitHub. Can also be a full GitLab url.
         repo: 'autodeployer-com/www',
@@ -24,8 +24,8 @@ export default defineConfig({
         activeHeaderLinks: true,
         lang: 'en-US',
         title: 'DIALOGWARE',
-        description: 'Text to Software solution to build a web application in minutes',
-        logo: 'https://www.autodeployer.com/favicon.ico',
+        description: 'Text to Service marketplace to build and deploy a web application in minutes',
+        logo: 'https://www.autodeployer.com/favicon.png',
         siteTitle: 'AutoDeployer.com', // When adding a logo, it gets displayed along with the site title. If your logo is all you need and if you would like to hide the site title text, set false to the siteTitle option.
         nav: [
             //{text: 'Home', link: '/'},
