@@ -10,6 +10,31 @@ marketplace for text2software & text2service solutions
 + Text To API
 + Text To WEB - from english description to vue module
 
++ apidsl
+
+config:
+
+
+    name: test
+    url:
+      run: test.autodeployer.com
+      docs: docs.test.com
+      web: www.test.com
+      git: github.com/proj/test
+
+
+### Run on:
++ cloud
++ browser
++ pc
+
+### Run with:
++ API
++ APP + php
++ API + Vue App
++ docker (terminal in browser)
+
+
 
 
 ## Install
