@@ -1,5 +1,8 @@
 # [www.autodeployer.com](http://www.autodeployer.com/)
 
++ [docs](http://docs.autodeployer.com)
+
+
 ![autodeployer.png](https://github.com/autodeployer-com/logo/raw/main/autodeployer.png)
 
 marketplace for text2software & text2service solutions
