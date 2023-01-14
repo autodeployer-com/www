@@ -1,18 +1,14 @@
 # [www.autodeployer.com](http://www.autodeployer.com/)
 
++ [docs](http://docs.autodeployer.com)
+
+
 ![autodeployer.png](https://github.com/autodeployer-com/logo/raw/main/autodeployer.png)
 
 marketplace for text2software & text2service solutions
 
 
-+ Text To APP - dialogware.com
-+ Text To API Request
-+ Text To SHELL Command - poloshell.com
-+ Text To REGEX Formula - https://www.autoregex.xyz/
-+ Text To API
-+ Text To WEB - from english description to vue module
 
-+ apidsl
 
 config:
 
