@@ -3,6 +3,7 @@
     "id": 2001,
     "url": "#sentence1",
     "category": "regex",
+    "description": "",
     "input": "Match valid email",
     "output": "1 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
@@ -10,6 +11,7 @@
     "id": 2002,
     "url": "#sentence2",
     "category": "api",
+    "description": "",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
@@ -17,14 +19,18 @@
     "id": 2003,
     "url": "#sentence3",
     "category": "html",
+    "description": "",
     "input": "Save api",
     "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
   },
   {
     "id": 2004,
-    "url": "#sentence3",
     "category": "bash",
+    "description": "",
     "input": "Convert all pages of PDF Document to text in txt format",
-    "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png]."
+    "output": "2 Load [file]. Load each line as URL and make a [screenshots] in [tiny] resolution on [mobile] device. Save each [screenshot] to [file] in format [png].",
+    "url-github": "#sentence3",
+    "url-docs": "#sentence3",
+    "url-image": ""
   }
 ]
